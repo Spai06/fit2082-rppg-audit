@@ -1,0 +1,13 @@
+method,factor,test,stat,p,n,effect,p_holm
+DeepPhys,skin_group,Mann-Whitney U (subject MAE),39.5,0.000543409793995238,17 vs 16,4-6 minus 3: +10.95 bpm,0.0032604587639714277
+DeepPhys,light,"Friedman (paired, subject x light)",5.935975609756075,0.11476704061594442,33,Incandescent=16.84 / LED-high=17.70 / LED-low=17.03 / Nature=20.15,0.4590681624637777
+DeepPhys,motion,"Friedman (paired, subject x motion)",66.54878048780486,2.3388958829977093e-14,33,Rotation=16.44 / Stationary=14.94 / Talking=10.76 / Walking=32.58,2.806675059597251e-13
+EfficientPhys,skin_group,Mann-Whitney U (subject MAE),24.0,5.8915201086864134e-05,17 vs 16,4-6 minus 3: +10.59 bpm,0.00047132160869491307
+EfficientPhys,light,"Friedman (paired, subject x light)",5.277439024390191,0.1525730559347735,33,Incandescent=12.99 / LED-high=13.17 / LED-low=14.34 / Nature=15.86,0.4590681624637777
+EfficientPhys,motion,"Friedman (paired, subject x motion)",54.082066869300874,1.0777391430399991e-11,33,Rotation=12.08 / Stationary=11.58 / Talking=7.84 / Walking=27.37,1.1855130573439992e-10
+PhysNet,skin_group,Mann-Whitney U (subject MAE),45.0,0.0011141902051434813,17 vs 16,4-6 minus 3: +6.53 bpm,0.005570951025717407
+PhysNet,light,"Friedman (paired, subject x light)",3.9969512195121633,0.261793531408871,33,Incandescent=10.67 / LED-high=9.84 / LED-low=10.76 / Nature=11.92,0.523587062817742
+PhysNet,motion,"Friedman (paired, subject x motion)",25.088414634146286,1.479701121720793e-05,33,Rotation=10.05 / Stationary=9.99 / Talking=7.60 / Walking=16.35,0.00013317310095487138
+TS-CAN,skin_group,Mann-Whitney U (subject MAE),31.0,0.0001666033466429685,17 vs 16,4-6 minus 3: +9.77 bpm,0.0011662234265007797
+TS-CAN,light,"Friedman (paired, subject x light)",3.082317073170731,0.37910681415226216,33,Incandescent=14.01 / LED-high=14.70 / LED-low=13.93 / Nature=16.10,0.523587062817742
+TS-CAN,motion,"Friedman (paired, subject x motion)",48.890909090909076,1.3761103776790175e-10,33,Rotation=13.09 / Stationary=13.16 / Talking=9.09 / Walking=24.92,1.3761103776790174e-09

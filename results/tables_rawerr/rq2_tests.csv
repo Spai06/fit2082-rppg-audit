@@ -1,0 +1,31 @@
+method,factor,test,stat,p,n,effect,p_holm
+CHROM,skin_group,Mann-Whitney U (subject MAE),49.5,0.0019456736648324438,17 vs 16,4-6 minus 3: +6.48 bpm,0.021402410313156883
+CHROM,light,"Friedman (paired, subject x light)",6.35562310030393,0.09553361746319142,33,Incandescent=12.41 / LED-high=14.06 / LED-low=15.22 / Nature=15.75,0.5732017047791484
+CHROM,motion,"Friedman (paired, subject x motion)",33.246951219512155,2.8566094926457607e-07,33,Rotation=10.42 / Stationary=16.63 / Talking=10.83 / Walking=17.29,5.998879934556097e-06
+DeepPhys,skin_group,Mann-Whitney U (subject MAE),35.0,0.0002943733927790546,17 vs 16,4-6 minus 3: +10.48 bpm,0.004415600891685819
+DeepPhys,light,"Friedman (paired, subject x light)",4.331306990881454,0.22783996846836704,33,Incandescent=16.50 / LED-high=17.08 / LED-low=16.67 / Nature=19.60,0.6505204534147503
+DeepPhys,motion,"Friedman (paired, subject x motion)",70.49544072948325,3.343217983379082e-15,33,Rotation=13.84 / Stationary=15.58 / Talking=9.78 / Walking=32.53,1.0029653950137246e-13
+EfficientPhys,skin_group,Mann-Whitney U (subject MAE),19.0,2.705897897994848e-05,17 vs 16,4-6 minus 3: +11.06 bpm,0.0005141206006190211
+EfficientPhys,light,"Friedman (paired, subject x light)",4.914893617021254,0.1781361851117318,33,Incandescent=14.06 / LED-high=14.56 / LED-low=14.33 / Nature=16.99,0.6505204534147503
+EfficientPhys,motion,"Friedman (paired, subject x motion)",59.58966565349541,7.192948581917403e-13,33,Rotation=11.35 / Stationary=14.04 / Talking=8.80 / Walking=26.71,2.085955088756047e-11
+GREEN,skin_group,Mann-Whitney U (subject MAE),57.0,0.004688082347629476,17 vs 16,4-6 minus 3: +8.75 bpm,0.03750465878103581
+GREEN,light,"Friedman (paired, subject x light)",9.782208588957019,0.020511120127985893,33,Incandescent=19.99 / LED-high=20.20 / LED-low=19.46 / Nature=23.22,0.14357784089590125
+GREEN,motion,"Friedman (paired, subject x motion)",48.82317073170729,1.4225679803575168e-10,33,Rotation=15.19 / Stationary=21.18 / Talking=15.68 / Walking=30.36,3.4141631528580404e-09
+LGI,skin_group,Mann-Whitney U (subject MAE),41.0,0.0006638966354753104,17 vs 16,4-6 minus 3: +8.71 bpm,0.007966759625703725
+LGI,light,"Friedman (paired, subject x light)",20.525835866261318,0.00013205485141843212,33,Incandescent=16.41 / LED-high=15.63 / LED-low=17.70 / Nature=21.40,0.0023769873255317783
+LGI,motion,"Friedman (paired, subject x motion)",53.29787234042552,1.583943410894236e-11,33,Rotation=11.51 / Stationary=18.20 / Talking=13.52 / Walking=27.49,4.1182528683250134e-10
+OMIT,skin_group,Mann-Whitney U (subject MAE),40.0,0.0005815160218316579,17 vs 16,4-6 minus 3: +8.94 bpm,0.007559708283811553
+OMIT,light,"Friedman (paired, subject x light)",18.37386018237076,0.0003682653168615339,33,Incandescent=16.26 / LED-high=16.15 / LED-low=17.70 / Nature=21.43,0.005155714436061475
+OMIT,motion,"Friedman (paired, subject x motion)",49.90909090909088,8.353386877751151e-11,33,Rotation=11.52 / Stationary=18.41 / Talking=13.64 / Walking=27.46,2.0883467194377877e-09
+PBV,skin_group,Mann-Whitney U (subject MAE),49.5,0.0019473745977191743,17 vs 16,4-6 minus 3: +8.10 bpm,0.021402410313156883
+PBV,light,"Friedman (paired, subject x light)",5.128440366972459,0.16263011335368757,33,Incandescent=18.20 / LED-high=19.08 / LED-low=17.85 / Nature=21.54,0.6505204534147503
+PBV,motion,"Friedman (paired, subject x motion)",55.94545454545448,4.315051778873114e-12,33,Rotation=13.16 / Stationary=20.18 / Talking=15.03 / Walking=27.30,1.1650639802957408e-10
+POS,skin_group,Mann-Whitney U (subject MAE),33.0,0.00022174371863930358,17 vs 16,4-6 minus 3: +7.18 bpm,0.0035478994982288572
+POS,light,"Friedman (paired, subject x light)",14.451219512195076,0.002351078254376907,33,Incandescent=11.83 / LED-high=11.72 / LED-low=13.34 / Nature=15.27,0.021402410313156883
+POS,motion,"Friedman (paired, subject x motion)",35.8073394495413,8.224665223946399e-08,33,Rotation=9.72 / Stationary=14.69 / Talking=10.31 / Walking=15.79,1.8094263492682077e-06
+PhysNet,skin_group,Mann-Whitney U (subject MAE),15.0,1.4136622993635786e-05,17 vs 16,4-6 minus 3: +10.82 bpm,0.0002827324598727157
+PhysNet,light,"Friedman (paired, subject x light)",5.935384615384585,0.11479657392402823,33,Incandescent=13.92 / LED-high=13.33 / LED-low=14.85 / Nature=17.25,0.5739828696201411
+PhysNet,motion,"Friedman (paired, subject x motion)",43.739263803680906,1.7144484627372219e-09,33,Rotation=11.93 / Stationary=14.05 / Talking=10.39 / Walking=23.77,3.94323146429561e-08
+TS-CAN,skin_group,Mann-Whitney U (subject MAE),30.5,0.00015518847423711738,17 vs 16,4-6 minus 3: +10.72 bpm,0.0026382040620309957
+TS-CAN,light,"Friedman (paired, subject x light)",3.5818181818181642,0.3103045840033262,33,Incandescent=13.17 / LED-high=14.27 / LED-low=14.60 / Nature=16.53,0.6505204534147503
+TS-CAN,motion,"Friedman (paired, subject x motion)",57.45592705167171,2.053913087141078e-12,33,Rotation=11.17 / Stationary=13.43 / Talking=8.65 / Walking=26.52,5.7509566439950186e-11

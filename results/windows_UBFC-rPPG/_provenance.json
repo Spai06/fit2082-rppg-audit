@@ -1,0 +1,22 @@
+{
+  "TS-CAN": {
+    "weights": "UBFC-rPPG_TSCAN.pth",
+    "trained_on": "UBFC-rPPG",
+    "used_on": "MMPD (no released checkpoint was trained on MMPD, so no leakage)"
+  },
+  "PhysNet": {
+    "weights": "UBFC-rPPG_PhysNet_DiffNormalized.pth",
+    "trained_on": "UBFC-rPPG",
+    "used_on": "MMPD (no released checkpoint was trained on MMPD, so no leakage)"
+  },
+  "EfficientPhys": {
+    "weights": "UBFC-rPPG_EfficientPhys.pth",
+    "trained_on": "UBFC-rPPG",
+    "used_on": "MMPD (no released checkpoint was trained on MMPD, so no leakage)"
+  },
+  "DeepPhys": {
+    "weights": "UBFC-rPPG_DeepPhys.pth",
+    "trained_on": "UBFC-rPPG",
+    "used_on": "MMPD (no released checkpoint was trained on MMPD, so no leakage)"
+  }
+}

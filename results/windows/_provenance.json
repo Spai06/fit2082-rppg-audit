@@ -1,0 +1,22 @@
+{
+  "TS-CAN": {
+    "weights": "PURE_TSCAN.pth",
+    "trained_on": "PURE",
+    "used_on": "MMPD (no released checkpoint was trained on MMPD, so no leakage)"
+  },
+  "PhysNet": {
+    "weights": "PURE_PhysNet_DiffNormalized.pth",
+    "trained_on": "PURE",
+    "used_on": "MMPD (no released checkpoint was trained on MMPD, so no leakage)"
+  },
+  "EfficientPhys": {
+    "weights": "PURE_EfficientPhys.pth",
+    "trained_on": "PURE",
+    "used_on": "MMPD (no released checkpoint was trained on MMPD, so no leakage)"
+  },
+  "DeepPhys": {
+    "weights": "PURE_DeepPhys.pth",
+    "trained_on": "PURE",
+    "used_on": "MMPD (no released checkpoint was trained on MMPD, so no leakage)"
+  }
+}

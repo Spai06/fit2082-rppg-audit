@@ -1,0 +1,14 @@
+# Analysis settings, fixed BEFORE looking at results (record any later change in lab_notebook.md).
+window_s: 30
+n_boot: 5000                 # cluster-bootstrap resamples, repeated with seeds 2082/2083/2084
+
+# MMPD covers Fitzpatrick 3-6 only (no types 1-2). The proposal's collapse (I-III vs IV-VI) becomes
+# 3 vs 4-6 here. Check the counts printed by the notebook: if either group has < 4 subjects, the W8
+# decision rule applies (report it as inconclusive rather than quietly averaging).
+skin_groups:
+  "3": [3]
+  "4-6": [4, 5, 6]
+
+# RQ1a Milestone-1 gate: UBFC-rPPG MAE counts as reproduced if |ours - published| <= max(1 bpm, 15%)
+rq1_tolerance_bpm: 1.0
+rq1_tolerance_rel: 0.15

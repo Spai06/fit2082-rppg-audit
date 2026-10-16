@@ -1,0 +1,11 @@
+file,light,motion,face_crop,lag_s,r
+p1_15.mat,Nature,Stationary,native,1.8,0.122
+p6_4.mat,LED-high,Stationary,native,-3.5,0.206
+p4_16.mat,Nature,Stationary,native,-3.667,0.175
+p5_16.mat,Nature,Stationary,native,0.667,0.257
+p7_16.mat,Nature,Stationary,native,-0.733,0.22
+p1_13.mat,LED-high,Stationary,native,0.967,0.191
+p4_4.mat,LED-high,Stationary,native,2.9,0.361
+p2_16.mat,Nature,Stationary,native,-0.1,0.345
+p3_13.mat,LED-high,Stationary,upscaled,-0.067,0.488
+p3_16.mat,Nature,Stationary,upscaled,3.467,0.214

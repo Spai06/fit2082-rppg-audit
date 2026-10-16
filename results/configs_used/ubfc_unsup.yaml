@@ -1,0 +1,56 @@
+BASE:
+- ''
+TOOLBOX_MODE: unsupervised_method
+UNSUPERVISED:
+  METHOD:
+  - ICA
+  - POS
+  - CHROM
+  - GREEN
+  - LGI
+  - PBV
+  - OMIT
+  METRICS:
+  - MAE
+  - RMSE
+  - MAPE
+  - Pearson
+  - SNR
+  - BA
+  DATA:
+    FS: 30
+    DATASET: UBFC-rPPG
+    DO_PREPROCESS: true
+    DATA_FORMAT: NDHWC
+    DATA_PATH: /content/drive/MyDrive/DATASET_2
+    CACHED_PATH: /content/cache/ubfc_unsup
+    EXP_DATA_NAME: ''
+    BEGIN: 0.0
+    END: 1.0
+    PREPROCESS:
+      DATA_TYPE:
+      - Raw
+      DATA_AUG:
+      - None
+      LABEL_TYPE: Raw
+      DO_CHUNK: false
+      CHUNK_LENGTH: 180
+      CROP_FACE:
+        DO_CROP_FACE: true
+        BACKEND: HC
+        USE_LARGE_FACE_BOX: true
+        LARGE_BOX_COEF: 1.5
+        DETECTION:
+          DO_DYNAMIC_DETECTION: false
+          DYNAMIC_DETECTION_FREQUENCY: 30
+          USE_MEDIAN_FACE_BOX: false
+      RESIZE:
+        H: 72
+        W: 72
+INFERENCE:
+  EVALUATION_METHOD: FFT
+  EVALUATION_WINDOW:
+    USE_SMALLER_WINDOW: false
+    WINDOW_SIZE: 10
+LOG:
+  PATH: /content/runs/ubfc_unsup
