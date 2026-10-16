@@ -223,7 +223,7 @@ def _design(df):
             d[c] = (d[f] == l).astype(float)
             terms[f].append(c)
     d["post_exercise"] = (d.exercise == 1).astype(float)
-    terms["exercise"] = ["post_exercise"]
+    terms["exercise"] = ["post_exercise"] if d.post_exercise.nunique() > 1 else []
     d["is_sup"] = (d.family == "supervised").astype(float)
     return d, {k: v for k, v in terms.items() if v}
 
@@ -244,6 +244,8 @@ def rq3_models(df, response="log_abs_err"):
         row = dict(family=fam, n_subjects=g.subject.nunique(), n_windows=len(g),
                    R2_marginal=r2m, R2_conditional=r2c, subject_variance_share=subj)
         for name, cols in terms.items():
+            if not cols:
+                continue
             keep = [t for t in all_terms if t not in cols]
             red = _fit(f"{response} ~ " + (" + ".join(keep) if keep else "1"), g)
             row[f"dR2_{name}"] = r2m - _nakagawa(red)[0]
@@ -258,6 +260,8 @@ def rq3_models(df, response="log_abs_err"):
         main = sum(terms.values(), []) + ["C(method)"]
         m0 = _fit(f"{response} ~ " + " + ".join(main), d)
         for name, cols in terms.items():
+            if not cols:
+                continue
             for c in cols:
                 d[f"{c}_x_sup"] = d[c] * d.is_sup
             m1 = _fit(f"{response} ~ " + " + ".join(main + [f"{c}_x_sup" for c in cols]), d)

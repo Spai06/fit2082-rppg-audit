@@ -1,0 +1,4 @@
+factor,interaction,df,LR,p
+skin tone,skin tone x family,1,52.103553071036,5.264957691537687e-13
+light,light x family,3,8.698007516475627,0.033587543061463124
+motion,motion x family,3,351.1315194016788,8.485275003614462e-76

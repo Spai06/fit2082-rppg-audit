@@ -88,7 +88,22 @@ Their protocol differs (whole 1-minute videos, their own filter settings), so co
 | TS-CAN        | motion     | Friedman (paired, subject x motion) | 52.2713 | 0      | 33       | Rotation=11.17 / Stationary=7.32 / Talking=8.65 / Walking=26.52    |   0      |
 
 
-## RQ3 - model could not be fitted: RuntimeError('Mixed model failed with every optimiser: log_abs_err ~ skin_dark + light_LED_high + light_Incandescent + light_Nature + motion_Rotation + motion_Talking + motion_Walking + post_exercise + C(method)')
+## RQ3 - mixed-effects variance attribution
+
+| family       |   n_subjects |   n_windows |   R2_marginal |   R2_conditional |   subject_variance_share |   dR2_skin tone |   LRT_p_skin tone |   dR2_light |   LRT_p_light |   dR2_motion |   LRT_p_motion |
+|:-------------|-------------:|------------:|--------------:|-----------------:|-------------------------:|----------------:|------------------:|------------:|--------------:|-------------:|---------------:|
+| supervised   |           33 |        4224 |        0.3415 |           0.4335 |                   0.092  |          0.1081 |                 0 |      0.0039 |             0 |       0.2263 |              0 |
+| unsupervised |           33 |        6336 |        0.2033 |           0.2758 |                   0.0725 |          0.0726 |                 0 |      0.0148 |             0 |       0.0981 |              0 |
+
+
+### Do supervised and unsupervised methods react the same way? (LRT)
+
+| factor    | interaction        |   df |       LR |      p |
+|:----------|:-------------------|-----:|---------:|-------:|
+| skin tone | skin tone x family |    1 |  52.1036 | 0      |
+| light     | light x family     |    3 |   8.698  | 0.0336 |
+| motion    | motion x family    |    3 | 351.132  | 0      |
+
 
 ## Face-crop outcome per video
 
